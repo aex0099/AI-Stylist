@@ -21,6 +21,8 @@ try:
     CV2_AVAILABLE = True
 except ImportError:
     CV2_AVAILABLE = False
+if not CV2_AVAILABLE:
+    st.warning("\u26a0\ufe0f ไม่พบ opencv-python (cv2) ในระบบ คุณภาพการตัดพื้นหลังจะต่ำลง\n\n\u2022 แนะนำให้ติดตั้ง opencv-python-headless เพื่อผลลัพธ์ที่ดีที่สุด\n\u2022 หาก deploy บน Streamlit Cloud หรือ devcontainer อาจไม่รองรับ opencv-python\n\u2022 ระบบจะใช้วิธี fallback อัตโนมัติ (rembg, backgroundremover, heuristic)\n")
 import io
 # Utility: Convert PIL Image to base64 for HTML display
 import base64
