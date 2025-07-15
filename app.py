@@ -16,11 +16,8 @@ try:
     REMBG_AVAILABLE = True
 except ImportError:
     REMBG_AVAILABLE = False
-try:
-    import cv2
-    CV2_AVAILABLE = True
-except ImportError:
-    CV2_AVAILABLE = False
+import cv2
+CV2_AVAILABLE = True
 import io
 # Utility: Convert PIL Image to base64 for HTML display
 import base64
