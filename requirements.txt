@@ -3,7 +3,7 @@ scikit-learn
 webcolors
 rembg
 backgroundremover
-opencv-python
+opencv-python-headless
 pillow
 requests
 numpy
